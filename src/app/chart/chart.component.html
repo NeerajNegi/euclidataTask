@@ -1,0 +1,18 @@
+<div class="row">
+    <!--Line Chart Start-->
+      <h4>Group Id: {{chartData.groupId}}</h4>
+      <div class="col-md-12 col-lg-12">
+        <div style="display: block;">
+        <canvas baseChart
+                    [datasets]="lineChartData"
+                    [labels]="lineChartLabels"
+                    [options]="lineChartOptions"
+                    [colors]="lineChartColors"
+                    [legend]="lineChartLegend"
+                    [chartType]="lineChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+    <!--Line Chart End-->
+</div>
